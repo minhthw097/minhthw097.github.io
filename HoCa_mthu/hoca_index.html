@@ -1,0 +1,81 @@
+
+
+
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="../icon.png" />
+    <title>Hồ Cá Mập Màu Sắc</title>
+
+    <!-- Kết nối CSS -->
+    <link rel="stylesheet" href="hoca_styles.css">
+</head>
+
+<body>
+ <button type="button" id="homeButton" class="homeButton"><a href="../index.html">
+         ⌂ Trang chủ</a>
+        </button>
+
+    <!-- Khung hồ cá -->
+    <main class="aquarium" id="aquarium">
+
+      
+        <!-- Bảng điều khiển -->
+        <div class="controls">
+
+            <button type="button" id="waterButton">
+                Đổi màu nước
+            </button>
+
+            <button type="button" id="musicButton">
+                Bật nhạc
+            </button>
+
+        </div>
+
+
+        <!-- Các chú cá -->
+        <div id="ca1" class="fish swim1">
+            <img src="ca1.png" alt="Cá thứ nhất">
+        </div>
+
+        <div id="ca2" class="fish swim2">
+            <img src="ca2.png" alt="Cá thứ hai">
+        </div>
+
+        <div id="ca3" class="fish swim1">
+            <img src="ca3.png" alt="Cá thứ ba">
+        </div>
+
+        <div id="ca5" class="fish swim3">
+            <img src="ca5.png" alt="Cá thứ tư">
+        </div>
+
+        <div id="caHong" class="fish swim3">
+            <img src="caHong.png" alt="Cá hồng">
+        </div>
+
+                <!-- Cá con thứ nhất -->
+        <div id="cacon1" class="fish-school">
+            <img src="cacon1.png" alt="Cá con thứ nhất">
+        </div>
+
+        <!-- Cá con thứ hai -->
+        <div id="cacon2" class="fish-school">
+            <img src="cacon2.png" alt="Cá con thứ hai">
+        </div>
+
+    </main>
+
+
+    <!-- Nhạc nền -->
+    <audio id="backgroundMusic" src="bbs.mp3" loop></audio>
+
+    <!-- Kết nối JavaScript -->
+    <script src="hoca_script.js"></script>
+
+</body>
+</html>
