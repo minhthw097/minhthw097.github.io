@@ -1,0 +1,242 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Times New Roman", Times, serif;
+  color: #053e8f; /* Màu chữ mặc định: xanh navy */
+  min-height: 100vh;
+  background: linear-gradient(180deg, #bae6fd 0%, #e0f2fe 50%, #f0f9ff 100%);
+  line-height: 1.6;
+}
+
+.navbar nav a.home-link {
+  background-color: #0284c7;
+  color: #ffffff;
+  border-radius: 999px;
+  padding: 5px 14px;
+  font-size: 15px;
+}
+
+.navbar nav a.home-link:hover {
+  background-color: #0369a1;
+  color: #ffffff;
+}
+
+.container {
+  width: 100%;
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Thanh điều hướng phía trên */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: rgba(255, 255, 255, 0.92);
+  border-bottom: 2px solid #bae6fd;
+  padding: 14px 0;
+}
+
+.nav-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+  color: #0284c7;
+  letter-spacing: 1px;
+}
+
+.navbar nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.navbar nav a {
+  text-decoration: none;
+  color: #0f294a;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 8px;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.navbar nav a:hover {
+  background-color: #e0f2fe;
+  color: #0284c7;
+}
+
+/* Khu vực giới thiệu đầu trang (Hero) */
+.hero {
+  padding: 48px 0 28px;
+}
+
+.hero-content {
+  background-color: #ffffff;
+  border: 2px solid #7dd3fc;
+  border-radius: 22px;
+  padding: 32px;
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  box-shadow: 0 10px 24px rgba(15, 41, 74, 0.08);
+}
+
+/* Thu nhỏ ảnh và chuyển thành ảnh tròn */
+.avatar {
+  width: 145px;
+  height: 145px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #38bdf8;
+  background-color: #e0f2fe;
+  flex-shrink: 0;
+}
+
+.hero-content h1 {
+  font-size: 32px;
+  font-weight: bold;
+  color: #0284c7;
+  margin-bottom: 6px;
+}
+
+.hero-content h3 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #0369a1;
+  margin-bottom: 10px;
+}
+
+.hero-content p {
+  font-size: 17px;
+  color: #0f294a;
+  margin-bottom: 6px;
+}
+
+.hero-button {
+  display: inline-block;
+  margin-top: 12px;
+  text-decoration: none;
+  background-color: #0284c7;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px 22px;
+  border-radius: 12px;
+  transition: background-color 0.2s, transform 0.2s;
+}
+
+.hero-button:hover {
+  background-color: #0369a1;
+  transform: translateY(-2px);
+}
+
+/* Các mục nội dung chính */
+.section,
+.contact {
+  padding: 20px 0;
+}
+
+.section h2,
+.contact h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #0369a1;
+  margin-bottom: 14px;
+  padding-bottom: 6px;
+  border-bottom: 2px solid #7dd3fc;
+}
+
+/* Thẻ thông tin bên trong từng mục */
+.card {
+  background-color: #ffffff;
+  border: 1.5px solid #bae6fd;
+  border-left: 5px solid #0284c7;
+  border-radius: 16px;
+  padding: 20px 24px;
+  box-shadow: 0 6px 16px rgba(15, 41, 74, 0.06);
+}
+
+.card h3 {
+  font-size: 19px;
+  font-weight: bold;
+  color: #0284c7;
+  margin-top: 12px;
+  margin-bottom: 4px;
+}
+
+.card h3:first-child {
+  margin-top: 0;
+}
+
+.card p {
+  font-size: 17px;
+  color: #0f294a;
+  margin-bottom: 10px;
+}
+
+.card p:last-child {
+  margin-bottom: 0;
+}
+
+/* Mục liên hệ */
+.contact .container p {
+  background-color: #ffffff;
+  border: 1.5px solid #bae6fd;
+  border-radius: 14px;
+  padding: 12px 18px;
+  margin-bottom: 10px;
+  font-size: 17px;
+}
+
+.contact a {
+  color: #0284c7;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.contact a:hover {
+  text-decoration: underline;
+}
+
+/* Chân trang */
+footer {
+  text-align: center;
+  padding: 24px 20px 32px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #0369a1;
+}
+
+/* Responsive cho màn hình nhỏ */
+@media (max-width: 700px) {
+  .hero-content {
+    flex-direction: column;
+    text-align: center;
+    padding: 24px 18px;
+  }
+
+  .hero-content h1 {
+    font-size: 26px;
+  }
+
+  .nav-content {
+    flex-direction: column;
+  }
+}
